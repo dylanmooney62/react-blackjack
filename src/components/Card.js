@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Card = ({ suit, name, hidden = false }) => {
-  const src = hidden ? 'img/cards/BACK.svg' : `img/cards/${suit}/${name}.svg`;
+  const src = hidden
+    ? 'img/cards/BACK.svg'
+    : `img/cards/${suit.toLowerCase()}/${name.toUpperCase()}.svg`;
 
   return (
     <div className="card">
@@ -11,7 +13,7 @@ const Card = ({ suit, name, hidden = false }) => {
       >
         <img
           src={src}
-          alt={`${suit} of ${name}`}
+          alt={`${name} of ${suit}`}
           className="h-full absolute inset-0 card__front mx-auto p-2"
         />
         <img
