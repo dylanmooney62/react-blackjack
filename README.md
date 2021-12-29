@@ -4,7 +4,7 @@ Demo blackjack project for BBC Software Engineering Graduate Scheme technical te
 
 ## Live demo
 
-A live demo of the application can be viewed here []()
+A live demo of the application can be viewed here [https://react-blackjack.vercel.app/](https://react-blackjack.vercel.app/)
 
 ## Assumptions
 
