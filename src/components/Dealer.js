@@ -24,7 +24,7 @@ const Dealer = ({ cards, dealerTurn, total, dispatch }) => {
     return () => clearTimeout(timerRef.current);
 
     // dealer makes turn, while under 21 keep drawing cards. Once done determine winner
-  }, [dealerTurn, total, dispatch]);
+  }, [dealerTurn, cards, total, dispatch]);
 
   let cardList;
 
